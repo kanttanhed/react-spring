@@ -7,16 +7,15 @@ import lombok.Data;
 
 @Data
 @Entity
-
 public class Contact {
     public @Id @GeneratedValue Long id;
     public String firstName;
     public String lastName;
     public String email;
 
-    public Contact(){}
+    public Contact() {}
 
-    public Contact(String firstName, String lastName, String email){
+    public Contact(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
